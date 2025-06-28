@@ -6,8 +6,11 @@
   <title>Morales Group LLC</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap" rel="stylesheet">
-  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
   <style>
+    .hero .container {
+        margin-top: 150px;
+    }
     body {
       font-family: 'Lato', sans-serif;
       color: #0a1a2f;
@@ -23,10 +26,13 @@
       color: #ffffff !important;
     }
     .hero {
-      background: url('https://via.placeholder.com/1600x700') center/cover no-repeat;
-      color: white;
+      background: url('images/homepageimage_resized.jpg') center/cover no-repeat;
+      color: #0a1a2f;
       padding: 150px 0;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      text-shadow: none;
+    }
+    .hero h1, .hero p {
+      color: #0a1a2f;
     }
     .hero .btn {
       background-color: #c8a95e;
@@ -54,7 +60,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="logo.png" alt="Morales Group Logo" style="height: 40px;" />
+        <img src="images/logo.png" alt="Morales Group Logo" style="height: 40px;" />
         <span style="color: #ffffff; font-family: 'Playfair Display', serif;">Morales Group LLC</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -76,9 +82,9 @@
   <!-- Hero Section -->
   <header class="hero text-center">
     <div class="container">
-      <h1>Affordable Luxury. Faith-Driven Vision.</h1>
-      <p class="lead">Real estate investment with a heart for community in Virginia.</p>
-      <a href="#properties" class="btn btn-lg mt-3">Browse Properties</a>
+      <h1>Building Wealth, Honoring Faith</h1>
+      <p class="lead">Morales Group LLC delivers world-class real estate investments in Staunton and Waynesboro, Virginia, rooted in Christian values and family-first principles.</p>
+      <a href="#properties" class="btn btn-lg mt-3">Explore Our Properties</a>
     </div>
   </header>
 
@@ -87,11 +93,11 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <h2>Our Mission</h2>
-          <p>Morales Group LLC revitalizes homes and communities through affordable, elegant real estate projects rooted in faith and service.</p>
+          <h2>Our Vision for Virginia’s Future</h2>
+          <p>At Morales Group LLC, we’re building more than properties—we’re creating legacies. Guided by our Christian faith and conservative values, we develop affordable, elegant homes that strengthen families and communities in Staunton and Waynesboro, Virginia. Inspired by bold leaders like Donald Trump, we bring unmatched ambition, integrity, and excellence to every project, ensuring lasting value for our clients and the Shenandoah Valley.</p>
         </div>
         <div class="col-md-6">
-          <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Community Image">
+            <img src="images/community.jpg" class="img-fluid rounded" alt="Community in Staunton and Waynesboro">
         </div>
       </div>
     </div>
@@ -100,51 +106,59 @@
   <!-- Properties Section -->
   <section id="properties" class="section bg-light">
     <div class="container">
-      <h2 class="text-center mb-5">Featured Properties</h2>
+      <h2 class="text-center mb-5">Our Premier Properties</h2>
+      <p class="text-center mb-4">Discover homes and investments crafted for families and built with integrity.</p>
       <div class="row g-4">
-        <div class="col-md-4 property-card">
-          <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Property">
-          <h5 class="mt-2">123 Main St</h5>
-          <p>$225,000 · 3BR · 2BA · 1,500 Sq Ft</p>
+        <!-- Property 1 -->
+        <div class="col-md-6 property-card">
+          <a href="https://www.zillow.com/homedetails/1627-N-Delphine-Ave-Waynesboro-VA-22980/108136807_zpid/" target="_blank">
+            <img src="images/1627delphine.jpg" class="img-fluid" alt="1627 N Delphine Ave, Waynesboro, VA - Cozy Family Retreat" />
+          </a>
+          <h5 class="mt-2">Cozy Family Retreat</h5>
+          <p>For Rent – $1,200/mo · Available March 2026</p>
+          <p>This charming 2-bedroom, 1-bath home offers 672 sq ft of warm, inviting space, perfect for small families or first-time renters in Waynesboro’s vibrant community.</p>
         </div>
-        <div class="col-md-4 property-card">
-          <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Property">
-          <h5 class="mt-2">456 Oak Lane</h5>
-          <p>For Rent · 2BR · 1BA · 1,000 Sq Ft</p>
+
+        <!-- Property 2 -->
+        <div class="col-md-6 property-card">
+          <a href="https://www.zillow.com/homedetails/248-S-Winchester-Ave-Waynesboro-VA-22980/108142637_zpid/" target="_blank">
+            <img src="images/248winchester.JPG" class="img-fluid" alt="248 S Winchester Ave, Waynesboro, VA - Spacious Investment Gem" />
+          </a>
+          <h5 class="mt-2">Spacious Investment Gem</h5>
+          <p>$239,900 · For Sale</p>
+          <p>A stunning 4-bedroom, 1-bath home with 943 sq ft, ideal for growing families or savvy investors seeking value and opportunity in Staunton/Waynesboro.</p>
         </div>
-        <div class="col-md-4 property-card">
-          <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Property">
-          <h5 class="mt-2">789 Pine Rd</h5>
-          <p>$180,000 · 2BR · 1BA · 900 Sq Ft</p>
-        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#properties" class="btn btn-dark">View All Properties</a>
       </div>
     </div>
   </section>
 
-  <!-- Why Work With Us -->
+  <!-- Services Section -->
   <section id="services" class="section">
     <div class="container text-center">
-      <h2 class="mb-5">Why Work With Us</h2>
+      <h2 class="mb-5">Why Morales Group Stands Out</h2>
       <div class="row">
         <div class="col-md-3 icon-box">
           <i class="bi bi-house-door-fill"></i>
           <h5>Affordable Luxury</h5>
-          <p>Elegant homes at honest prices.</p>
+          <p>We craft elegant, family-friendly homes at prices that make homeownership achievable, blending quality with value.</p>
         </div>
         <div class="col-md-3 icon-box">
           <i class="bi bi-heart-fill"></i>
           <h5>Faith & Integrity</h5>
-          <p>We invest with purpose and transparency.</p>
+          <p>Every project is guided by Christian principles, ensuring honesty, transparency, and trust in all we do.</p>
         </div>
         <div class="col-md-3 icon-box">
           <i class="bi bi-tools"></i>
-          <h5>Renovation ROI</h5>
-          <p>Proven strategy, lasting value.</p>
+          <h5>Renovation Expertise</h5>
+          <p>Our proven renovation strategies maximize property value, delivering outstanding returns for investors.</p>
         </div>
         <div class="col-md-3 icon-box">
           <i class="bi bi-globe"></i>
-          <h5>Local Roots</h5>
-          <p>Building Virginia, one home at a time.</p>
+          <h5>Community Focus</h5>
+          <p>We’re dedicated to strengthening Staunton and Waynesboro through developments that foster family and community growth.</p>
         </div>
       </div>
     </div>
@@ -153,26 +167,37 @@
   <!-- Contact Section -->
   <section id="contact" class="section bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
-      <form class="mx-auto" style="max-width: 600px;">
+      <h2 class="text-center mb-4">Let’s Build Your Future Together</h2>
+      <p class="text-center mb-4">Contact Morales Group LLC to explore investment opportunities, property inquiries, or partnership possibilities in Staunton and Waynesboro.</p>
+      <form class="mx-auto" style="max-width: 600px;" action="https://formspree.io/f/your-form-id" method="POST">
         <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Your Name" required />
+          <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="name" name="name" required />
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Your Email" required />
+          <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+          <input type="email" class="form-control" id="email" name="email" required />
         </div>
         <div class="mb-3">
-          <select class="form-select">
-            <option>General Inquiry</option>
-            <option>Investor Interest</option>
-            <option>Available Property</option>
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" />
+        </div>
+        <div class="mb-3">
+          <label for="inquiry" class="form-label">What Are You Interested In? <span class="text-danger">*</span></label>
+          <select class="form-select" id="inquiry" name="inquiry" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="general">General Inquiry</option>
+            <option value="investor">Investment Opportunities</option>
+            <option value="property">Property Details</option>
+            <option value="partnership">Business Partnership</option>
           </select>
         </div>
         <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
         </div>
         <div class="text-center">
-          <button type="submit" class="btn btn-dark">Send Message</button>
+          <button type="submit" class="btn btn-dark">Submit Inquiry</button>
         </div>
       </form>
     </div>
@@ -181,8 +206,17 @@
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      <p>&copy; 2025 Morales Group LLC. All rights reserved.</p>
-      <p><a href="#" class="text-white text-decoration-underline">Privacy Policy</a></p>
+      <p>© 2025 Morales Group LLC. All rights reserved.</p>
+      <p>Building communities with faith, family, and integrity in Staunton and Waynesboro, Virginia.</p>
+      <p>
+        <a href="#privacy" class="text-white text-decoration-underline">Privacy Policy</a> | 
+        <a href="#terms" class="text-white text-decoration-underline">Terms of Service</a>
+      </p>
+      <p>
+        <a href="https://x.com/moralesgroupllc" class="text-white text-decoration-underline me-2">Follow us on X</a> |
+        <a href="https://linkedin.com/company/moralesgroupllc" class="text-white text-decoration-underline me-2">Connect on LinkedIn</a> |
+        <a href="https://facebook.com/moralesgroupllc" class="text-white text-decoration-underline">Join us on Facebook</a>
+      </p>
     </div>
   </footer>
 
